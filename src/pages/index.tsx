@@ -12,7 +12,16 @@ interface Example {
 const exampleList: Example[] = [{
   title: 'Svg',
   content: null,
-},];
+},{
+  title: 'Rect',
+  content: null,
+},{
+  title: 'Circle',
+  content: null,
+}, {
+  title: 'Ellipse',
+  content: null,
+}];
 
 export default function ComponentScreen() {
   return (
