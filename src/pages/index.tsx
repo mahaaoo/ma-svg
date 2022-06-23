@@ -21,6 +21,54 @@ const exampleList: Example[] = [{
 }, {
   title: 'Ellipse',
   content: null,
+}, {
+  title: 'Line',
+  content: null,
+}, {
+  title: 'Polygon',
+  content: null,
+}, {
+  title: 'Polyline',
+  content: null,
+}, {
+  title: 'Text',
+  content: null,
+}, {
+  title: 'TSpan',
+  content: null,
+}, {
+  title: 'TextPath',
+  content: null,
+}, {
+  title: 'G',
+  content: null,
+}, {
+  title: 'Use',
+  content: null,
+}, {
+  title: 'Symbol',
+  content: null,
+}, {
+  title: 'Image',
+  content: null,
+}, {
+  title: 'ClipPath',
+  content: null,
+}, {
+  title: 'LinearGradient',
+  content: null,
+}, {
+  title: 'RadialGradient',
+  content: null,
+}, {
+  title: 'Mask',
+  content: null,
+}, {
+  title: 'Pattern',
+  content: null,
+}, {
+  title: 'ForeignObject',
+  content: null,
 }];
 
 export default function ComponentScreen() {
