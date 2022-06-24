@@ -25,6 +25,7 @@ import MaskExample from './pages/MaskExample';
 import PatternExample from './pages/PatternExample';
 
 import ForeignObjectExample from './pages/ForeignObjectExample';
+import PathExample from './pages/PathExample';
 
 export type RootStackParamList = {
   ComponentScreen: undefined;
@@ -48,6 +49,7 @@ export type RootStackParamList = {
   MaskExample: undefined;
   PatternExample: undefined;
   ForeignObjectExample: undefined;
+  PathExample: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -160,6 +162,11 @@ const App: React.FC<{}> = () => {
         name="ForeignObjectExample"
         component={ForeignObjectExample}
         options={{ headerTitle: 'ForeignObjectExample' }}
+      />
+      <Stack.Screen
+        name="PathExample"
+        component={PathExample}
+        options={{ headerTitle: 'PathExample' }}
       />
     </Stack.Navigator>
   );

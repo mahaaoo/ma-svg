@@ -69,6 +69,9 @@ const exampleList: Example[] = [{
 }, {
   title: 'ForeignObject',
   content: null,
+}, {
+  title: 'Path',
+  content: null,
 }];
 
 export default function ComponentScreen() {
