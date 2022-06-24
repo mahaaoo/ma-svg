@@ -16,9 +16,9 @@ const TextExample: React.FC<TextExampleProps> = props => {
           stroke="purple"
           fontSize="20"
           fontWeight="bold"
-          x="100"
+          x="0"
           y="20"
-          textAnchor="middle"
+          textAnchor="start"
         >
           STROKED TEXT
         </Text>

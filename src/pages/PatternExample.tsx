@@ -1,6 +1,8 @@
 import React from 'react';
-import {View} from 'react-native';
-import Svg, { Defs, Pattern, Path, Rect, Ellipse } from 'react-native-svg';
+import {Dimensions, View} from 'react-native';
+import Svg, { Defs, Pattern, Path, Rect, Text } from 'react-native-svg';
+
+const {width, height} = Dimensions.get('window');
 
 interface PatternExampleProps {
 };
@@ -10,22 +12,33 @@ const PatternExample: React.FC<PatternExampleProps> = props => {
 
   return (
     <View>
-      <Svg width="100%" height="100%" viewBox="0 0 800 400">
+      <Svg width="100%" height="100%">
         <Defs>
           <Pattern
             id="TrianglePattern"
             patternUnits="userSpaceOnUse"
             x="0"
             y="0"
-            width="100"
-            height="100"
-            viewBox="0 0 10 10"
+            width="150"
+            height="150"
           >
-            <Path d="M 0 0 L 7 0 L 3.5 7 z" fill="red" stroke="blue" />
+            <Text
+              rotation="-50" origin="100, 50"
+              fill="none"
+              stroke="#D8D8D8"
+              fontSize="20"
+              fontWeight="bold"
+              x="0"
+              y="20"
+              textAnchor="start"
+            >
+              mahaaoo
+            </Text>
           </Pattern>
         </Defs>
-        <Rect fill="none" stroke="blue" x="1" y="1" width="798" height="398" />
-        <Ellipse
+        <Rect 
+          fill="url(#TrianglePattern)" x="0" y="0" width={width} height={height} />
+        {/* <Ellipse
           fill="url(#TrianglePattern)"
           stroke="black"
           strokeWidth="5"
@@ -33,7 +46,7 @@ const PatternExample: React.FC<PatternExampleProps> = props => {
           cy="200"
           rx="350"
           ry="150"
-        />
+        /> */}
       </Svg>
     </View>
   )
